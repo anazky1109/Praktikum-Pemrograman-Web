@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anazky — Portofolio</title>
+  <link rel="stylesheet" href="Portofolio Anazky .css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="images/Nazky ava.png" alt="Avatar" class="brand-avatar" />
+        <span class="brand-text">Muhammad Anazky</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#tugasakhir">Tugas Akhir</a></li>
+          <li><a href="#experience">Pengalaman</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hai, saya <span class="accent">Muhammad Anazky</span></h1>
+          <p class="lead">Mahasiswa Universitas Lampung Fakultas Teknik, Jurusan Teknik Informatika</p>
+          <p>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/muhammad-anazky-putra-irwansya-b4a51a348/?trk=" target="_blank" rel="noopener">My LinkedIn</a>
+            <a class="btn btn-outline" href="#contact">Hubungi</a>
+          </p>
+        </div>
+        <div class="hero-card">
+          <img src="images/Nazky ava.png" alt="Foto profil" />
+          <p class="muted">Frontend • Graphic Designer • Social Media Manager • Project Manager</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Tentang Saya</h2>
+          <p>
+            Saya adalah seorang mahasiswa Universitas Unila yang saat ini mempelajari dasar-dasar HTML dan CSS dari modul praktikum.
+            Minat saya sangat tertuju pada bidang Desain Grafis dan juga Visual pada pembentukan UI/UX, Itulah mengapa
+            saya mengambil fokus konsentrasi RPL agar dapat lebih mendalami proses pembentukan suatu sistem yang lebih kompleks.
+          </p>
+          <ul class="about-list">
+            <li>AIESEC - Team Leader of Experience & Development</li>
+            <li>HIMATRO - Sekretaris Departemen Kominfo Periode 2024</li>
+            <li>LOCAL PROJECT - Organizing Committe of Customer Experience</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Deskripsi Tugas Akhir</h3>
+          <p>Website Portofolio ini mengimplementasikan semua materi pada Percobaan 1.1–1.5: struktur dasar, gambar & link, inline & external CSS, layout responsif, serta form dengan styling.</p>
+          <a class="btn" href="#contact">Kirim Pesan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TUGAS AKHIR -->
+    <section id="tugasakhir" class="section section-alt">
+      <div class="container">
+        <h2>Tugas Akhir (Portofolio & Keahlian) </h2>
+        <div class="projects-grid">
+          <article class="card project">
+            <h3>Desain Grafis</h3>
+            <p>Content Creation yang Informatif dan juga Interaktif.</p>
+            <a class="btn btn-sm" href="https://www.instagram.com/p/DPyotqXEZJ2/?img_index=1" target="_blank" rel="noopener">Lihat Konten</a>
+          </article>
+
+          <article class="card project">
+            <h3>My Portofolio</h3>
+            <p>Portofolio dengan Bentuk Landing page satu halaman dengan layout grid dan CTA.</p>
+            <a class="btn btn-sm" href="#" aria-disabled="true">Demo</a>
+          </article>
+
+          <article class="card project">
+            <h3>Social Media Manager</h3>
+            <p>Social Media yang di manage sebagai Internal Communication & Learning Opportunity</p>
+            <a class="btn btn-sm" href="https://www.instagram.com/krakatoacorner/" target="_blank" rel="noopener">Sosial Media</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / SIDEBAR STYLE -->
+    <section id="experience" class="section">
+      <div class="container grid-3">
+        <div class="experience">
+          <h4>Mahasiswa Aktif</h4>
+          <p>Aktif dalam mengikuti setiap Project kampus dan juga menjaga nilai akademik serta prestasi dengan cukup seimbang (insyaallah)</p>
+        </div>
+        <div class="experience">
+          <h4>AIESEC</h4>
+          <p>Aktif sebagai Team Leader dari Brand Marketing AIESEC in UNILA serta menjadi Team Leader dari Experience & Development Team</p>
+        </div>
+        <div class="experience">
+          <h4>HIMATRO</h4>
+          <p>AKtif sebagai Sekretaris Departemen Kominfo pada periode pertama saat saya mengikuti kepengurusan, lalu dilanjutkan menjadi Ketua Pelaksana pada program kerja HOS.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FORM -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2>Kontak</h2>
+        <div class="contact-grid">
+          <form class="form card form-contact" action="#" method="POST" novalidate>
+            <label for="nama">Nama Lengkap <span class="required">*</span></label>
+            <input id="nama" name="nama" type="text" required placeholder="Nama lengkap Anda" />
+
+            <label for="email">Email <span class="required">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="email@domain.com" />
+
+            <label for="telepon">Nomor Telepon</label>
+            <input id="telepon" name="telepon" type="tel" placeholder="0812xxxx" />
+
+            <label for="kota">Kota Asal</label>
+            <select id="kota" name="kota">
+              <option value="">Pilih Kota</option>
+              <option value="jakarta">Jakarta</option>
+              <option value="bandung">Bandung</option>
+              <option value="lampung">Lampung</option>
+              <option value="medan">Medan</option>
+            </select>
+
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan..."></textarea>
+
+            <button class="btn btn-primary" type="submit">Kirim Data</button>
+          </form>
+
+          <aside class="card contact-info">
+            <h3>Info Kontak</h3>
+            <p>Email: <a href="mailto:developer@example.com">anazkyp@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammad-anazky-putra-irwansya-b4a51a348/?trk=" target="_blank">linkedin.com/in/AnazkyPutra</a></p>
+            <p>Instagram: <a href="https://instagram.com/nzkyputra" target="_blank">instagram.com/nzkyputra</a></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Muhammad Anazky — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Minimal JS only for small nav toggle and year (optional, unobtrusive)
+    (function () {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      const toggle = document.getElementById('nav-toggle');
+      const navList = document.getElementById('nav-list');
+      toggle.addEventListener('click', function () {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        navList.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>
