@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manchester United FC Media</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Hero pakai background Old Trafford */
+    #hero {
+      background:
+        linear-gradient(rgba(128, 0, 0, 0.6), rgba(128, 0, 0, 0.6)),
+        url('images/OldTrafford.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-red-900 text-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-3">
+        <img src="images/Man United Logo.png" alt="MUFC Logo" class="w-10 h-10" />
+        <h1 class="text-2xl font-bold">MUFC Media</h1>
+      </div>
+      <nav class="hidden md:flex space-x-6 font-semibold">
+        <a href="#hero" class="hover:text-gray-200">Home</a>
+        <a href="#features" class="hover:text-gray-200">Features</a>
+        <a href="#players" class="hover:text-gray-200">Players</a>
+        <a href="#about" class="hover:text-gray-200">About</a>
+        <a href="#contact" class="hover:text-gray-200">Contact</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none text-2xl">☰</button>
+    </div>
+
+    <div id="mobile-menu" class="hidden bg-red-800/90 md:hidden">
+      <a href="#hero" class="block py-2 px-4 hover:bg-red-700">Home</a>
+      <a href="#features" class="block py-2 px-4 hover:bg-red-700">Features</a>
+      <a href="#players" class="block py-2 px-4 hover:bg-red-700">Players</a>
+      <a href="#about" class="block py-2 px-4 hover:bg-red-700">About</a>
+      <a href="#contact" class="block py-2 px-4 hover:bg-red-700">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="text-white py-32 text-center px-6">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Welcome to Manchester United FC Media</h2>
+    <p class="text-lg mb-8 max-w-2xl mx-auto text-gray-200">
+      Your Official Source for Manchester United News, Media & Player Insights
+    </p>
+    <a href="https://www.instagram.com/ManchesterUnited/" target="_blank" class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-semibold text-lg shadow-lg">
+  Join Us
+</a>
+  </section>
+
+  <!-- Features -->
+<section id="features" class="py-20 bg-gray-100 text-center">
+  <h3 class="text-3xl font-bold mb-10">Our Features</h3>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto px-6">
+
+    <!-- Latest News -->
+    <a href="https://www.manutd.com/en/news" target="_blank" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block hover:scale-105">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2h-3l-2-2H9L7 7H4a2 2 0 00-2 2v2" />
+      </svg>
+      <h4 class="font-semibold mb-2">Latest News</h4>
+      <p>Get real-time updates about MUFC games and transfers.</p>
+    </a>
+
+    <!-- Video Highlights -->
+    <a href="https://www.youtube.com/@manutd" target="_blank" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block hover:scale-105">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553 2.276a1 1 0 010 1.448L15 16m-6 0a2 2 0 01-2-2V8a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H9z" />
+      </svg>
+      <h4 class="font-semibold mb-2">Video Highlights</h4>
+      <p>Watch exclusive interviews and match highlights.</p>
+    </a>
+
+    <!-- Match Statistics -->
+    <a href="https://footystats.org/id/clubs/manchester-united-fc-149" target="_blank" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block hover:scale-105">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+      </svg>
+      <h4 class="font-semibold mb-2">Match Statistics</h4>
+      <p>Access live scores, player performance data and analytics.</p>
+    </a>
+
+    <!-- Fan Community -->
+    <a href="https://www.instagram.com/theunitedwave/" target="_blank" class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition block hover:scale-105">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto mb-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+      </svg>
+      <h4 class="font-semibold mb-2">Fan Community</h4>
+      <p>Join the Red Devils family from all over the world.</p>
+    </a>
+  </div>
+</section>
+
+ <!-- XI Player List -->
+<section id="players" class="py-20 bg-white text-center">
+  <h3 class="text-3xl font-bold mb-10">Manchester United XI (2025)</h3>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-6xl mx-auto px-6">
+    <!-- 11 pemain -->
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Senne Lammens.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Senne Lammens</h4>
+      <p class="text-sm text-gray-600">Goalkeeper</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Maguire.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Harry Maguire</h4>
+      <p class="text-sm text-gray-600">Centre-back</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/De Ligt.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Matthijs de Ligt</h4>
+      <p class="text-sm text-gray-600">Centre-back</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Luke Shaw.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Luke Shaw</h4>
+      <p class="text-sm text-gray-600">Centre-back</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Amad Diallo.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Amad Diallo</h4>
+      <p class="text-sm text-gray-600">Wing-back</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Diogo Dalot.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Diogo Dalot</h4>
+      <p class="text-sm text-gray-600">Wing-back</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Casemiro.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Casemiro</h4>
+      <p class="text-sm text-gray-600">Midfielder</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Bruno Fernandes.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Bruno Fernandes</h4>
+      <p class="text-sm text-gray-600">Midfielder</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Bryan Mbeumo.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Bryan Mbeumo</h4>
+      <p class="text-sm text-gray-600">Attacking Mid/Wing</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Mason Mount.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Mason Mount</h4>
+      <p class="text-sm text-gray-600">Attacking Mid/Wing</p>
+    </div>
+
+    <div class="bg-gray-100 rounded-2xl p-4 shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="images/Matheus Cunha.png" class="mx-auto mb-4 w-32 h-44 object-contain object-bottom rounded-lg transition-transform duration-300 hover:scale-105">
+      <h4 class="font-bold">Matheus Cunha</h4>
+      <p class="text-sm text-gray-600">Striker</p>
+    </div>
+  </div>
+</section>
+
+<!-- Video Section -->
+<section id="video" class="relative py-20 text-center text-white">
+  <!-- Background image -->
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/OldTrafford.jpg');"></div>
+  <!-- Overlay merah -->
+  <div class="absolute inset-0 bg-red-900 bg-opacity-60"></div>
+
+  <!-- Konten -->
+  <div class="relative z-10">
+    <h3 class="text-3xl font-bold mb-6">Featured Video</h3>
+    <p class="mb-8 text-gray-200">Watch the latest highlight from Manchester United</p>
+    <button id="openVideo" class="bg-white text-red-700 hover:bg-red-200 px-8 py-3 rounded-full font-semibold">
+      Watch Video
+    </button>
+  </div>
+</section>
+
+<!-- Modal Video Popup -->
+<div id="videoModal" class="fixed inset-0 bg-black bg-opacity-80 hidden flex items-center justify-center z-50">
+  <div class="relative w-full max-w-3xl mx-auto">
+    <button id="closeVideo" class="absolute -top-8 right-0 text-white text-3xl font-bold hover:text-red-500">&times;</button>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe id="ytVideo" class="w-full h-[500px] rounded-2xl shadow-lg"
+        src="https://www.youtube.com/embed/6VzUQK3bCxI"
+        title="Manchester United Highlights"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white text-center px-6">
+    <h3 class="text-3xl font-bold mb-6">Contact Us</h3>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-red-600" />
+      <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-red-600" />
+      <textarea placeholder="Your Message" class="w-full border border-gray-300 p-3 rounded h-32 focus:ring-2 focus:ring-red-600"></textarea>
+      <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded font-semibold w-full">
+        Send Message
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2025 Manchester United FC Media. All Rights Reserved.</p>
+    <div class="flex justify-center space-x-4 mt-4">
+      <a href="#" class="hover:text-red-500">Facebook</a>
+      <a href="#" class="hover:text-red-500">Instagram</a>
+      <a href="#" class="hover:text-red-500">Twitter</a>
+    </div>
+  </footer>
+
+<script>
+  const openVideo = document.getElementById('openVideo');
+  const closeVideo = document.getElementById('closeVideo');
+  const videoModal = document.getElementById('videoModal');
+  const ytVideo = document.getElementById('ytVideo');
+
+  // Fungsi buka video
+  openVideo.addEventListener('click', () => {
+    videoModal.classList.remove('hidden');
+    // Play otomatis
+    ytVideo.src += "?autoplay=1";
+  });
+
+  // Fungsi tutup video
+  closeVideo.addEventListener('click', () => {
+    videoModal.classList.add('hidden');
+    // Stop video (reset src biar berhenti)
+    ytVideo.src = ytVideo.src.replace("?autoplay=1", "");
+  });
+</script>
+
+
+</body>
+</html>
